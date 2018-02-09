@@ -1,0 +1,16 @@
+routing_function = dor_no_express;
+topology = cmesh;
+k = 10;
+n = 2;
+c = 4;
+x = 10;
+y = 10;
+xr = 2;
+yr = 2;
+packet_size = 8;
+traffic = uniform;
+sim_type = latency;
+sample_period = 1000;
+warmup_periods = 3;
+injection_rate = 0.01;
+latency_thres = 10000.0;

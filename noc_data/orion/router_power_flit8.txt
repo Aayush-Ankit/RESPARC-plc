@@ -1,0 +1,1 @@
+Buffer:0.008714	Crossbar:0.00227531	VC_allocator:0.00320448	SW_allocator:0.00249541	Clock:0.00151419	Total:0.0182034

@@ -1,0 +1,2 @@
+Link power is 0.000376647
+Link area is 1247.4

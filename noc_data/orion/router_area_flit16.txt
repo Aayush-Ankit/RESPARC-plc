@@ -1,0 +1,1 @@
+Abuffer:13962	 ACrossbar:3983.74	 AVCAllocator:7201.08	 ASWAllocator:787.618	 Atotal:25934.5
