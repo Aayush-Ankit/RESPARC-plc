@@ -61,37 +61,37 @@ for file_name in os.listdir(trace_path):
 
 #print (minimum_latency)
 #print (maximum_latency)
-#print (average_latency)
-#print (average_hop)
+print (average_latency)
+print (average_hop)
 
-# plot the latency values vs nc_size
-x, avg_lat = zip(*(sorted(average_latency.items())))
-x, max_lat = zip(*(sorted(maximum_latency.items())))
-x, min_lat = zip(*(sorted(minimum_latency.items())))
-x, avg_hop = zip(*(sorted(average_hop.items())))
-
-f, arr = plt.subplots(2,2)
-arr[0,0].plot(x, avg_lat, 'o-', 'r')
-arr[0,0].set_title('Average packet latency')
-arr[0,0].set_ylabel('Latency (cycles)')
-#arr[0,0].set_xlabel('Neurocell size')
-
-arr[0,1].plot(x, max_lat, '.-')
-arr[0,1].set_title('Maximum packet latency')
-arr[0,1].set_ylabel('Latency (cycles)')
-#arr[0,1].set_xlabel('Neurocell size')
-
-arr[1,0].plot(x, min_lat, 'v-')
-arr[1,0].set_title('Minimum packet latency')
-arr[1,0].set_ylabel('Latency (cycles)')
-#arr[1,0].set_xlabel('Neurocell size')
-
-arr[1,1].plot(x, avg_hop, 'x-')
-arr[1,1].set_title('Average energy per packet transfer')
-arr[1,1].set_ylabel('Number of Hops')
-#arr[1,1].set_xlabel('Neurocell size')
-
-plt.show()
+## plot the latency values vs nc_size
+#x, avg_lat = zip(*(sorted(average_latency.items())))
+#x, max_lat = zip(*(sorted(maximum_latency.items())))
+#x, min_lat = zip(*(sorted(minimum_latency.items())))
+#x, avg_hop = zip(*(sorted(average_hop.items())))
+#
+#f, arr = plt.subplots(2,2)
+#arr[0,0].plot(x, avg_lat, 'o-', 'r')
+#arr[0,0].set_title('Average packet latency')
+#arr[0,0].set_ylabel('Latency (cycles)')
+##arr[0,0].set_xlabel('Neurocell size')
+#
+#arr[0,1].plot(x, max_lat, '.-')
+#arr[0,1].set_title('Maximum packet latency')
+#arr[0,1].set_ylabel('Latency (cycles)')
+##arr[0,1].set_xlabel('Neurocell size')
+#
+#arr[1,0].plot(x, min_lat, 'v-')
+#arr[1,0].set_title('Minimum packet latency')
+#arr[1,0].set_ylabel('Latency (cycles)')
+##arr[1,0].set_xlabel('Neurocell size')
+#
+#arr[1,1].plot(x, avg_hop, 'x-')
+#arr[1,1].set_title('Average energy per packet transfer')
+#arr[1,1].set_ylabel('Number of Hops')
+##arr[1,1].set_xlabel('Neurocell size')
+#
+#plt.show()
 
 
 
